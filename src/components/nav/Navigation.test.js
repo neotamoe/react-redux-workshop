@@ -10,4 +10,14 @@ describe('Navigation Component: ', function () {
     expect(true).toBe(true);
   });
 
+  let nav;
+
+  beforeEach(() =>{
+    nav = mount(<BrowserRouter><Navigation /></BrowserRouter>);
+  });
+
+  it('should instantiate the Navigation Component', function () {
+    expect(nav).toHaveLength(1);
+  });
+
 });
